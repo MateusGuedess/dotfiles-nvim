@@ -1,9 +1,13 @@
 # My AstroVim Template
+My main reason to start to use nvim, is because I'm tired of using vscode, 
+and the memory that it consume from my computer just to see javascript. 
+
 
 **NOTE:** This is for AstroNvim v4+
 
 ## Plugins 
   ### Wich-Key
+  To help me remember the keys
    
 ```lua
     return {
