@@ -1,14 +1,16 @@
 # My AstroVim Template
-My main reason to start to use nvim, is because I'm tired of using vscode, 
-and the memory that it consume from my computer just to see javascript. 
 
+My main reason to start to use nvim, is because I'm tired of using vscode,
+and the memory that it consume from my computer just to see javascript.
 
 **NOTE:** This is for AstroNvim v4+
 
-## Plugins 
-  ### Wich-Key
-  To help me remember the keys
-   
+## Plugins
+
+### Wich-Key
+
+To help me remember the keys
+
 ```lua
     return {
       "folke/which-key.nvim",
@@ -25,13 +27,48 @@ and the memory that it consume from my computer just to see javascript.
           desc = "Buffer Local Keymaps (which-key)",
         },
       },
-    } 
+    }
 
 ```
 
+### Theme
 
+I'm using catppuccin macchiato, the configuration is inside the file `astroui.lua`.
 
+```lua
+  return {
+    "AstroNvim/astroui",
+    ---@type AstroUIOpts
+    opts = {
+      -- change colorscheme
+      colorscheme = "catppuccin-macchiato",
+      -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
+      highlights = {
+        init = { -- this table overrides highlights in all themes
+          -- Normal = { bg = "#000000" },
+        },
+        astrodark = { -- a table of overrides/changes when applying the astrotheme theme
+          -- Normal = { bg = "#000000" },
+        },
+      },
+      -- Icons can be configured throughout the interface
+      icons = {
+        -- configure the loading of the lsp in the status line
+        LSPLoading1 = "⠋",
+        LSPLoading2 = "⠙",
+        LSPLoading3 = "⠹",
+        LSPLoading4 = "⠸",
+        LSPLoading5 = "⠼",
+        LSPLoading6 = "⠴",
+        LSPLoading7 = "⠦",
+        LSPLoading8 = "⠧",
+        LSPLoading9 = "⠇",
+        LSPLoading10 = "⠏",
+      },
+    },
+  }
 
+```
 
 A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
