@@ -23,8 +23,12 @@ return {
           "markdown",
           "lua",
           "go",
+          "ts",
+          "tsx",
         },
       },
+      null_ls.builtins.code_actions.gomodifytags,
+      null_ls.builtins.code_actions.proselint,
     })
   end,
 }
