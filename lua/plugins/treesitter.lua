@@ -20,6 +20,7 @@ return {
       "gitignore",
       "graphql",
       "json",
+      "ruby",
       -- add more arguments for adding more treesitter parsers
     },
   },

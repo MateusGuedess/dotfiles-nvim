@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin", enabled = true },
   { import = "astrocommunity.editing-support/todo-comments-nvim" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.typescript" },
   -- import/override with your plugins folder
 }
