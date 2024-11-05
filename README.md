@@ -70,6 +70,23 @@ I'm using catppuccin macchiato, the configuration is inside the file `astroui.lu
 
 ```
 
+### Blame
+
+Gitblame plugin
+
+```lua
+  return {
+    {
+      "FabijanZulj/blame.nvim",
+      lazy = false,
+      config = function() require("blame").setup {} end,
+      opts = {
+        blame_options = { "-w" },
+      },
+    },
+  }
+```
+
 A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
 ## 🛠️ Installation
